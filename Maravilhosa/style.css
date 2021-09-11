@@ -27,8 +27,9 @@ a {
 /* -------------------------------------------------------------------------------- */
 
 /* HEADER */
-.cabecalho {
-  background: url(./img/backgroud_header_01.jpg) no-repeat;
+.header {
+  background: url(./img/backgroud_header_01.jpg);
+  background-repeat: no-repeat;
   background-size: cover;
   min-height: 80vh;
   width: 100%;
@@ -44,7 +45,7 @@ a {
   flex-direction: column;
 }
 
-.titulo {
+.header-titulo {
   width: 90%;
   margin: 5px 10px 5px 10px;
   text-align: center;
@@ -54,14 +55,7 @@ a {
   align-items: center;
 }
 
-/* .container-imagem{
-    width: 90%;
-    height: 220px;
-    margin-left: 20px;
-    margin-top: 50px;
-} */
-
-.imagem-header {
+.header-maravilhosa-imagem {
   width: 90%;
   height: 220px;
   margin-left: 20px;
@@ -97,6 +91,62 @@ a {
 /* SECAO Maravilhosa */
 .maravilhosa{
   background-color: #fad8e5;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 25px;
+}
+
+.container-maravilhosa{
+  text-align: center;
+  padding: 0 5%;
+}
+
+.maravilhosa-titulo{
+  color: #ea4c89;
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 40px;
+}
+
+.maravilhosa-boxBorder{
+  border: 1px solid #674582;
+  margin: 42px;
+}
+
+.boxBorder-texto{
+  margin: 30px;
+  color: #462755;
+  text-align: center;
+}
+
+.container-suaHistoria{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #674582;
+  /* margin-left: 08%;
+  margin-right: 08%; */
+}
+
+.suaHistoria-imagem{
+  width: 80%;
+  margin-bottom: 30px;
+}
+
+.suaHistoria-texto{
+  width: 100%;
+  /* margin-left: 40px; */
+}
+
+.suaHistoria-titulo{
+  color: #462755;
+  padding-bottom: 10px;
+}
+
+.suaHistoria-paragrafo{
+  padding-bottom: 10px;
 }
 /* AUTORA */
 
