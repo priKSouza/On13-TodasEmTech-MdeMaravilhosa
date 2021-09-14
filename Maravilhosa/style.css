@@ -11,8 +11,6 @@ a {
   margin: 2px;
 }
 
-/* NAVBAR */
-
 .navbar {
   background-color: #c083b9;
   width: 100%;
@@ -24,9 +22,6 @@ a {
   padding: 5px;
 }
 
-/* -------------------------------------------------------------------------------- */
-
-/* HEADER */
 .header {
   background: url(./img/backgroud_header_01.jpg);
   background-repeat: no-repeat;
@@ -47,8 +42,9 @@ a {
 
 .header-titulo {
   width: 90%;
-  margin: 5px 10px 5px 10px;
+  margin: 45px 0px 10px 70px;
   text-align: center;
+  text-transform: uppercase;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -62,7 +58,6 @@ a {
   margin-top: 50px;
 }
 
-/* --- BOTAO --- */
 .botao-header {
   display: flex;
   align-items: center;
@@ -86,10 +81,7 @@ a {
   transition: background-color 0.5s;
 }
 
-/*********** HEADER   *********/
-
-/* SECAO Maravilhosa */
-.maravilhosa{
+.maravilhosa {
   background-color: #fad8e5;
   align-items: center;
   width: 100%;
@@ -97,61 +89,78 @@ a {
   padding-bottom: 25px;
 }
 
-.container-maravilhosa{
+.container-maravilhosa {
   text-align: center;
   padding: 0 5%;
 }
 
-.maravilhosa-titulo{
+.maravilhosa-vera {
+  display: flex;
+  align-items: center;
+}
+
+.maravilhosa-titulo {
   color: #ea4c89;
   font-size: 40px;
-  text-align: center;
+  text-align: end;
   font-weight: bold;
   padding-top: 40px;
+  margin-right: 167px;
 }
 
-.maravilhosa-boxBorder{
-  border: 1px solid #674582;
-  margin: 42px;
+.maravilhosa-imagem {
+  width: 40%;
+  height: 100%;
+  border-radius: 20px 0px;
+  border: 5px solid #ea4c89;
 }
 
-.boxBorder-texto{
+.maravilhosa-boxBorder {
+  margin: 30px;
+}
+
+.boxBorder-texto {
   margin: 30px;
   color: #462755;
   text-align: center;
+  border: 1px solid #674582;
+  padding: 30px;
 }
 
-.container-suaHistoria{
+.container-suaHistoria {
   display: flex;
-  flex-direction: column;
+  flex-direction: row-reverse;
   align-items: center;
-  color: #674582;
-  /* margin-left: 08%;
-  margin-right: 08%; */
+  color: #625e66;
+  margin-top: 60px;
 }
 
-.suaHistoria-imagem{
-  width: 80%;
-  margin-bottom: 30px;
+.nossa-imagem {
+  width: 30%;
+  height: 100%;
+  border-radius: 0px 20px;
+  border: 5px solid #ea4c89;
+  margin: 30px;
 }
 
-.suaHistoria-texto{
+.suaHistoria-texto {
   width: 100%;
-  /* margin-left: 40px; */
+  text-align: justify;
+  border: 1px solid #462755;
+  padding: 30px;
+  margin: 9px;
 }
 
-.suaHistoria-titulo{
+.suaHistoria-titulo {
   color: #462755;
   padding-bottom: 10px;
 }
 
-.suaHistoria-paragrafo{
+.suaHistoria-paragrafo {
   padding-bottom: 10px;
 }
 
-/* AUTORA */
-
-.autora{
+.autora {
   background-color: #b6dbf1d2;
   align-items: center;
   width: 100%;
@@ -160,33 +169,39 @@ a {
   padding: 60px;
 }
 
-.autora-titulo{
-  text-align: center;
+.autora-titulo {
+  text-align: left;
   color: #ea4c89;
   font-size: 32px;
   font-weight: bold;
   letter-spacing: 1px;
-  padding: 30px;
+  margin-bottom: 10px;
 }
 
-.autora-sobre{
+.autora-sobre {
   display: flex;
 }
 
-.autora-imagem{
+.autora-imagem {
   width: 30%;
   border-radius: 50%;
   margin-right: 35px;
 }
 
-/* FOOTER */
+.autora-historia{
+  margin: auto;
+}
 
-.footer{
+.autora-texto{
+  margin-top: 20px;
+}
+
+.footer {
   background: #ea4c89;
   color: #f3f3f3;
 }
 
-.footer-menu{
+.footer-menu {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -196,31 +211,44 @@ a {
   padding: 30px;
 }
 
-.footer-links{
+.footer-links {
   display: block;
   text-align: center;
   list-style: none;
 }
 
-.footer-cc{
+.footer-cc {
   background: #5b5e5e;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 20px;
-  margin-top: 30px;
+  margin-top: 25px;
 }
 
-/* MEDIA QUERY */
+@media (min-width:320px) and (max-width: 768px) {
+  .maravilhosa-vera, .maravilhosa-titulo, .container-suaHistoria{
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    margin-bottom: revert;
+  }
 
-@media (min-width: 768px){
-  .container-header{
+  .autora-sobre {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 780px) {
+  .container-header {
     display: flex;
     flex-direction: row;
     align-items: center;
   }
 
-  .header-maravilhosa-imagem{
+  .header-maravilhosa-imagem {
     width: 100%;
     height: 350px;
     margin-left: 10px;
