@@ -43,12 +43,8 @@ a {
 .header-titulo {
   width: 90%;
   margin: 45px 0px 10px 70px;
-  text-align: center;
   text-transform: uppercase;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  font-size: 20px;
 }
 
 .header-maravilhosa-imagem {
@@ -188,11 +184,11 @@ a {
   margin-right: 35px;
 }
 
-.autora-historia{
+.autora-historia {
   margin: auto;
 }
 
-.autora-texto{
+.autora-texto {
   margin-top: 20px;
 }
 
@@ -226,13 +222,24 @@ a {
   margin-top: 25px;
 }
 
-@media (min-width:320px) and (max-width: 768px) {
-  .maravilhosa-vera, .maravilhosa-titulo, .container-suaHistoria{
+@media (min-width: 320px) and (max-width: 768px) {
+  .maravilhosa-vera,
+  .maravilhosa-titulo,
+  .container-suaHistoria {
     flex-direction: column;
     align-items: center;
     margin: auto;
     text-align: center;
     margin-bottom: revert;
+  }
+
+  .header-titulo{
+    width: 90%;
+    margin: 5px 10px 5px 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .autora-sobre {
